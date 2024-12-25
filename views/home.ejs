@@ -1,0 +1,18 @@
+
+    <%- include("layout/navbar") %>
+    <main>
+        <h1>PROGRAMMING LANGUAGES</h1>
+        <ul>
+           <% if(plNames.length> 0){ %>
+               <% for(let i=0; i< plNames.length; i++){ %>
+                    <li><%= plNames[i] %> </li>
+                <% } %>
+            <% }else{ %>
+                <p>No available data!</p>
+           <% } %>
+        </ul>
+    </main>
+    <%- include("layout/footer")%>
+   
+</body>
+</html>
